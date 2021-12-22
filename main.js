@@ -1,4 +1,4 @@
-
+var name_text = "text_name";
 difference = 0;
 rightWristX = 0;
 leftWristX = 0;
@@ -34,10 +34,10 @@ function gotPoses(results)
 
 function draw() {
     background('#969A97');
-
+name_text = document.getElementById("text_name").value;
     document.getElementById("square_side").innerHTML = "The text size will be = " + difference +"px";
     fill('#F90093');
     textSize(difference);
     stroke('#F90093');
-    text('Auro', 50, 400);
+    text(name_text, 50, 400);
 }
